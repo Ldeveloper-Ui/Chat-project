@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VLsk Chat</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>VLsk Chat</h1>
+      <button id="plus-btn" title="Tambah fitur">+</button>
+    </header>
+
+    <main class="chat">
+      <ul id="messages"></ul>
+    </main>
+
+    <footer class="inputbar">
+      <input id="m" type="text" placeholder="Tulis pesan..." autocomplete="off" />
+      <button id="send-btn">Send</button>
+    </footer>
+
+    <!-- Socket.IO client dari server -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
