@@ -71,3 +71,37 @@ export default defineConfig([
   },
 ])
 ```
+
+##PERSONAL##
+
+# Chat-project
+
+Chat-project adalah aplikasi percobaan berbasis chat yang dikembangkan menggunakan **Express + Socket.IO** untuk backend dan **React + Vite** untuk frontend. Proyek ini dirancang sebagai laboratorium kreatif untuk mempelajari workflow Git, TypeScript, dan pengembangan aplikasi chat real-time.
+
+## Fitur Utama
+
+- Backend menggunakan **Express** dengan integrasi **Socket.IO** untuk komunikasi real-time.
+- Frontend dibangun dengan **React + Vite** untuk performa cepat dan struktur modular.
+- Ditulis dengan **TypeScript** untuk menjaga konsistensi tipe dan meminimalisir bug.
+- Struktur project terorganisir, memisahkan backend dan frontend.
+- Branch `main` digunakan untuk versi stabil, sedangkan `dev` untuk eksperimen fitur baru.
+
+## Struktur Project
+
+chat-app/
+├─ server.ts              # Backend utama dengan Express + Socket.IO
+├─ package.json           # Dependensi backend (Node.js/Express)
+├─ tsconfig.json          # Konfigurasi TypeScript untuk backend
+├─ client/                # Frontend React + Vite
+│  ├─ index.html          # Entry point HTML untuk React
+│  ├─ package.json        # Dependensi frontend (React, Vite, dll)
+│  ├─ tsconfig.json       # Konfigurasi TypeScript untuk frontend
+│  └─ src/                # Source code React
+│     ├─ main.tsx         # Entry point React
+│     ├─ App.tsx          # Komponen utama aplikasi
+│     ├─ App.css          # Style khusus App
+│     ├─ index.css        # Style global
+│     └─ components/      # Folder untuk komponen kecil (Button, ChatBox, dll)
+├─ .gitignore             # File/folder yang diabaikan Git
+├─ README.md              # Dokumentasi project
+└─ LICENSE                # Lisensi project
